@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from 'react'
-import FullScreenMessage from './components/shared/FullScreenMessage'
-
-import classNames from 'classnames/bind'
-import styles from './App.module.scss'
 import Heading from './components/sections/Heading'
 import Video from './components/sections/Video'
-import { Wedding } from './models/wedding'
+import FullScreenMessage from './components/shared/FullScreenMessage'
 import ImageGallery from './components/sections/ImageGallery'
 import Intro from './components/sections/Intro'
 import Invitation from './components/sections/Invitation'
 import Calender from './components/sections/Calender'
+import Map from './components/sections/Map'
+
+import classNames from 'classnames/bind'
+import styles from './App.module.scss'
+
+import { Wedding } from './models/wedding'
 
 const cx = classNames.bind(styles)
 
@@ -73,6 +75,7 @@ function App() {
       <Invitation message={invitation} />
       <ImageGallery images={galleryImages} />
       <Calender date={date} />
+      <Map location={location} />
       {JSON.stringify(wedding)}
     </div>
   )
