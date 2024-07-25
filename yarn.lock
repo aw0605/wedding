@@ -11537,6 +11537,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-day-picker@npm:8.8.0":
+  version: 8.8.0
+  resolution: "react-day-picker@npm:8.8.0"
+  peerDependencies:
+    date-fns: ^2.28.0
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 10c0/635537efab411e4bd62d1965a970d2bcad543f2ecfe8789f96ee5580d9df61dba84528cace9861fba3a9e08b858a6f286a991ed830d7053f8af1acae8034a2ca
+  languageName: node
+  linkType: hard
+
 "react-dev-utils@npm:^12.0.1":
   version: 12.0.1
   resolution: "react-dev-utils@npm:12.0.1"
@@ -14054,6 +14064,7 @@ __metadata:
     json-server: "npm:0.17.3"
     prettier: "npm:^3.3.3"
     react: "npm:^18.3.1"
+    react-day-picker: "npm:8.8.0"
     react-dom: "npm:^18.3.1"
     react-scripts: "npm:5.0.1"
     sass: "npm:^1.77.8"
