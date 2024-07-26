@@ -12,6 +12,7 @@ import classNames from 'classnames/bind'
 import styles from './App.module.scss'
 
 import { Wedding } from './models/wedding'
+import Contact from './components/sections/Contact'
 
 const cx = classNames.bind(styles)
 
@@ -76,6 +77,7 @@ function App() {
       <ImageGallery images={galleryImages} />
       <Calender date={date} />
       <Map location={location} />
+      <Contact groom={groom} bride={bride} />
       {JSON.stringify(wedding)}
     </div>
   )

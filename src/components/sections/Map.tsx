@@ -84,8 +84,8 @@ function WayToCome({
     <div className={cx('wrap-waytocome')}>
       <div className={cx('txt-label')}>{label}</div>
       <ul>
-        {list.map((waytocome) => (
-          <li>{waytocome}</li>
+        {list.map((waytocome, idx) => (
+          <li key={idx}>{waytocome}</li>
         ))}
       </ul>
     </div>
