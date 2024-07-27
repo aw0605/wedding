@@ -14,6 +14,7 @@ import classNames from 'classnames/bind'
 import styles from './App.module.scss'
 
 import { Wedding } from './models/wedding'
+import AttendCountModal from './components/AttendCountModal'
 
 const cx = classNames.bind(styles)
 
@@ -80,6 +81,7 @@ function App() {
       <Map location={location} />
       <Contact groom={groom} bride={bride} />
       <Share groomName={groom.name} brideName={bride.name} date={date} />
+      <AttendCountModal wedding={wedding} />
     </div>
   )
 }
