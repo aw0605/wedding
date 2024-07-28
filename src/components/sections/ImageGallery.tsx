@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Section from '@shared/Section'
 import ImageViewer from '../ImageViewer'
+import generateImageUrl from '@/utils/generateImageUrl'
 
 import classNames from 'classnames/bind'
 import styles from './ImageGallery.module.scss'
@@ -28,9 +29,28 @@ function ImageGallery({ images }: { images: string[] }) {
             <li
               key={idx}
               className={cx('wrap-img')}
-              onClick={() => handleSelectImg(idx)}
+              onClick={() => {
+                handleSelectImg(idx)
+              }}
             >
-              <img src={src} alt="사진첩 이미지" />
+              <picture>
+                <source
+                  srcSet={generateImageUrl({
+                    filename: src,
+                    format: 'webp',
+                    option: 'w_240,h_240,q_auto,c_fill',
+                  })}
+                  type="image/webp"
+                />
+                <img
+                  src={generateImageUrl({
+                    filename: src,
+                    format: 'jpg',
+                    option: 'w_240,h_240,c_fill,q_auto',
+                  })}
+                  alt="이미지"
+                />
+              </picture>
             </li>
           ))}
         </ul>
