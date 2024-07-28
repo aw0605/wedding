@@ -55,6 +55,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "json-server": "0.17.3",
-    "prettier": "^3.3.3"
+    "prettier": "^3.3.3",
+    "webpack-font-preload-plugin": "1.5.0"
   }
 }

@@ -1,7 +1,8 @@
 @font-face {
     font-family: 'NanumAmSeuTeReuDam';
     src:
-      url('../assets/fonts/NanumAmSeuTeReuDam.woff2') format('woff2'),
-      url('../assets/fonts/NanumAmSeuTeReuDam.woff') format('woff'),
-      url('../assets/fonts/NanumAmSeuTeReuDam.ttf') format('truetype');
+      url('../assets/fonts/subset-NanumAmSeuTeReuDam.woff2') format('woff2'),
+      url('../assets/fonts/subset-NanumAmSeuTeReuDam.woff') format('woff'),
+      url('../assets/fonts/subset-NanumAmSeuTeReuDam.ttf') format('truetype');
+    font-display: fallback;
   }
