@@ -1,6 +1,5 @@
 import Heading from './components/sections/Heading'
 import Video from './components/sections/Video'
-import FullScreenMessage from './components/shared/FullScreenMessage'
 import ImageGallery from './components/sections/ImageGallery'
 import Intro from './components/sections/Intro'
 import Invitation from './components/sections/Invitation'
@@ -18,11 +17,7 @@ import useWedding from './hooks/useWedding'
 const cx = classNames.bind(styles)
 
 function App() {
-  const { wedding, error } = useWedding()
-
-  if (error) {
-    return <FullScreenMessage type="error" />
-  }
+  const { wedding } = useWedding()
 
   if (wedding == null) {
     return null
